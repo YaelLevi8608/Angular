@@ -1,0 +1,68 @@
+<div id="all">
+  <h2>יש לך שאלה?</h2>
+  <div id="form">
+    <div class="piska">כתוב לנו אותה! ונשתדל להשיב לך בהקדם...</div>
+
+    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)" #send="ngForm" class="container-fluname">
+      <div class="form">
+        <div class="form-group row">
+          <div class="col-7">
+            <input type="text" class="form-control" #name="ngModel" [(ngModel)]="newform.name" name="name"
+              placeholder="שם מלא">
+          </div>
+          <!-- if the input valid or clear-->
+          <!-- <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+        זהו שדה חובה</div>-->
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-group row">
+          <div class="col-7">
+            <input type="text" class="form-control" required name="tel" #tel="ngModel" [(ngModel)]="newform.tel"
+              placeholder="מספר טלפון">
+          </div>
+          <!-- if the input valid or clear-->
+          <div [hidden]="tel.valid || tel.pristine" class="alert alert-danger">
+            זהו שדה חובה</div>
+        </div>
+
+      </div>
+      <div class="form">
+        <div class="form-group row">
+          <div class="col-7">
+            <textarea class="form-control" required name="details" rows="3" #details="ngModel"
+              [(ngModel)]="newform.details" placeholder="תוכן הבקשה"></textarea>
+          </div>
+          <div [hidden]="details.valid || details.pristine" class="alert alert-danger">
+            זהו שדה חובה
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-group row">
+          <div class="col-7">
+            <input type="text" class="form-control" #gmail="ngModel" [(ngModel)]="newform.gmail" name="gmail"
+              placeholder="כתובת מייל">
+          </div>
+          <!-- if the input valid or clear-->
+          <!-- <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+        זהו שדה חובה</div>-->
+        </div>
+      </div>
+      <div id="b">
+        <button type="submit" class="btn btn-primary" [disabled]="!send.valid">שלח פנייה</button>
+        
+      </div>
+    </form>
+  </div>
+  <div id="kav"></div>
+  <div id="details">
+    <div class="piska">או פנה אלינו בכל דרך שתבחר...</div>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>ירקון 7, חיפה</p>
+      <p><i class="fa fa-whatsapp fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>053-774-5411</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>  y0556788608@gmail.com </p>
+    </div>
+  </div>
+</div>

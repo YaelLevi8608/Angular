@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body dir="rtl">
+
+  <!-- Navbar -->
+  <div id="all">
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a routerLink="/"  routerLinkActive="active"  class="w3-bar-item w3-button w3-padding-large">דף הבית</a>
+        <a routerLink="/contact-us" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-large w3-hide-small">שלח פנייה</a>
+        <a routerLink="/my-feedback" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> לקוחות מגיבים</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <a href="" routerLink="/cards" routerLinkActive="active" class="w3-padding-large w3-button" title="More">השירותים שלנו <i
+              class="fa fa-caret-down"></i></a>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <p  class="w3-bar-item w3-button">די ג'יי</p>
+            <p class="w3-bar-item w3-button">הקלטות</p>
+            <p class="w3-bar-item w3-button">ג'ינגלים לרדיו</p>
+            <p  class="w3-bar-item w3-button">הפקת קליפים</p>
+          </div>
+        </div>
+        
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        <p style="padding-right: 100px;padding-top: 10px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 13px;width: 300px;">{{ser.get().value}}</p>
+      </div>
+    </div>
+
+     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <p class="w3-bar-item w3-button w3-padding-large">די ג'יי</p>
+      <p class="w3-bar-item w3-button w3-padding-large">הקלטות</p>
+      <p class="w3-bar-item w3-button w3-padding-large">ג'ינגלים לרדיו</p>
+      <p class="w3-bar-item w3-button w3-padding-large">הפקת קליפים</p>
+    </div> -
+
+   
+   
+    </div>
+  
+  
+<router-outlet></router-outlet>  

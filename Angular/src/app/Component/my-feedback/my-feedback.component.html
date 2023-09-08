@@ -1,0 +1,18 @@
+<link href="../fontawesome-free-5.15.4-web/css/all.css">
+<div id="all">
+    <div *ngFor="let item of ser.feedbackList">
+     
+        <div id="f">
+            <div class="bg-light">
+                <p >{{item.description}}</p>
+            </div>
+            {{item.name |my}} 
+           <a routerLink="/my-feedback" routerLinkActive="active" (click)="like(item)" ><i class="fa fa-thumbs-up"></i> {{item.count}}</a>
+            
+        </div>
+           
+    </div>
+
+<a routerLink="/add-feedback" routerLinkActive="active" [appHighlight]="color">הוסף תגובה משלך</a>
+<router-outlet></router-outlet>  
+</div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="home-page.component.scss">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body dir="rtl">
+
+  <!-- Navbar -->
+  <div id="all">
+ 
+
+   
+    div class="w3-content" style="max-width:2000px;margin-top:46px">
+ 
+       <div class="mySlides w3-display-container w3-center">
+        <!-- <img src="../img/DJ_justmusic-13.jpg" style="width:100%"> -->
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Los Angeles</h3>
+          <p><b>We had the best time playing at Venice Beach!</b></p>
+        </div>
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="../img/guitar_1568640240.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>New York</h3>
+          <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+        </div>
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <img src="../img/tumblr_ktbj68tstz1qzs0kqo1_500.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div>
+      </div> 
+
+      <!-- The Band Section -->
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:900px" id="band">
+        <h2 class="w3-wide" style="color: white;">Ulpanino</h2>
+        <p class="w3-opacity" style="color: white;"><i>We love music</i></p>
+        <p class="w3-justify"
+          style="color: white; font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          חברת וויבס סאונד, הוקמה בתאריך  {{myDate | date}} בתור חברת הגברה ותאורה ולאחר מכן שינתה את יעדה אל תחום ההקלטות. Vibes Sound
+          הוקמה ומנוהלת על ידי משה וינשטין, בעל תעודת הסמכה ממכללת bpm-המכללה הגבוהה ללימודי מוזיקה, עם שנים של ניסיון
+          כטכנאי סאונד, ובעל התמחות במגוון תחומים בעולם המוזיקה, ההקלטה, הנגינה, וההפקה. הסטודיו מעניק חווית הקלטה
+          מקצועית, ציוד איכותי, יחס אישי ורמת שירות אמריקאית.
+
+          הסטודיו המרווח והנעים ממוקם בשכונת הגבעה הצרפתית בירושלים, ודרך הגישה אליו בתחבורה ציבורית או ברכב פרטי קלה
+          וזמינה במיוחד. הסטודיו שהוקם כהמשך ישיר לפעילות השטח של חברת Vibes Sound Production עוצב ונבנה באופן אישי על
+          ידי עומר קרני, מנהל חברת Omer Karni Acustic Design, המתמחה בבנייה ופיתוח אקוסטי לאולפני ההקלטות המובילים .
+        </p>
+      
+      </div>
+    </div>
+  
+  
+<router-outlet></router-outlet>  

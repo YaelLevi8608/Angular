@@ -1,0 +1,19 @@
+
+    <div class="pagewrap">
+        <form [formGroup]="addcomment" class="form" id="form">
+          <h3 class="form__title">לקוחות מגיבים...</h3>
+          <div class="container">
+            <input class="container__input" type="email" formControlName="email" id="username" name="username" value="" required>
+            <label id="emailLabel"  class="container__label">אמיל</label>
+          </div>
+          <div class="container">
+            <input class="container__input" type="text" formControlName="description" id="pass" name="password" value="" required>
+            <label id="conLabel" class="container__label">תגובה</label>
+          </div>
+          <div class="container">
+            <input class="container__input" type="text" formControlName="phone" id="pass" name="password" value="" required>
+            <label id="phonLabel"  class="container__label">טלפון</label>
+          </div>
+          <button class="form__submit" id="submit" type="button" value="submit" (click)="OnSubmit()">Submit</button>
+        </form>
+      </div>
